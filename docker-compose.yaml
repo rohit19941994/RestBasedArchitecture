@@ -4,7 +4,7 @@ services:
     image: prom/prometheus:latest
     container_name: prometheus
     volumes:
-      - \prometheus.yaml
+      - \prometheus.yml
     ports:
       - 9090:9090
 
@@ -20,7 +20,7 @@ services:
       - 9411:9411
   
   authorService:
-    image: feezankhattak2208/authorsvc:1.0
+    image: rohit199419941994/authorsvc:1.0
     container_name: authorService
     ports:
       - 7071:7071
@@ -30,7 +30,7 @@ services:
       - SPRING_ZIPKIN_BASE_URL=http://host.docker.internal:9411/
 
   bookService:
-    image: feezankhattak2208/booksvc:1.0
+    image: rohit199419941994/booksvc:1.0
     container_name: BookService
     ports:
       - 7070:7070
