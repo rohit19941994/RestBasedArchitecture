@@ -59,7 +59,15 @@ authorsByName:
 we have some technologies that made our tasks easy. The following technologies are used.
 
 1. Prometheus
+
+    http://localhost:9090
+
 2. Grafana
+
+    http://localhost:3000
+
 3. Zipkins
+
+    http://localhost:9411
 
 Currently we are using its latest version. but you can change according to your need. 
